@@ -293,6 +293,14 @@
                         <optgroup label="ユーザー指定" id="user-defined-models-group">
                         </optgroup>
                     </select>
+
+                    <label for="setting-harassment">嫌がらせ:</label>
+                    <select id="setting-harassment" class="safety-setting-select">
+                        <option value="BLOCK_NONE">ブロックしない</option>
+                        <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
+                        <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
+                        <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
+                    </select>
                     
                     <div id="openrouter-model-input-container" class="hidden">
                         <label for="openrouter-model-input">OpenRouter モデル名:</label>
