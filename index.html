@@ -293,46 +293,7 @@
                         <optgroup label="ユーザー指定" id="user-defined-models-group">
                         </optgroup>
                     </select>
-
-                    <!-- ↓↓↓ このブロックをコピーして貼り付ける ↓↓↓ -->
-                    <div class="settings-item">
-                        <h4>セーフティ設定</h4>
-                        <div class="safety-setting-grid">
-                          <label for="setting-harassment">嫌がらせ:</label>
-                          <select id="setting-harassment" class="safety-setting-select">
-                            <option value="BLOCK_NONE">ブロックしない</option>
-                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
-                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
-                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
-                          </select>
-
-                          <label for="setting-hate-speech">ヘイトスピーチ:</label>
-                          <select id="setting-hate-speech" class="safety-setting-select">
-                            <option value="BLOCK_NONE">ブロックしない</option>
-                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
-                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
-                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
-                          </select>
-
-                          <label for="setting-sexually-explicit">性的表現:</label>
-                          <select id="setting-sexually-explicit" class="safety-setting-select">
-                            <option value="BLOCK_NONE">ブロックしない</option>
-                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
-                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
-                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
-                          </select>
-
-                          <label for="setting-dangerous-content">危険なコンテンツ:</label>
-                          <select id="setting-dangerous-content" class="safety-setting-select">
-                            <option value="BLOCK_NONE">ブロックしない</option>
-                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
-                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
-                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!-- ↑↑↑ このブロックまで ↑↑↑ -->
-              
+                    
                     <div id="openrouter-model-input-container" class="hidden">
                         <label for="openrouter-model-input">OpenRouter モデル名:</label>
                         <input type="text" id="openrouter-model-input" placeholder="例: openai/gpt-5.1" aria-label="OpenRouter モデル名">
@@ -354,6 +315,45 @@
                         ※サポート外の機能: システムプロンプト, Function Calling, Web検索, 思考プロセス
                     </p>
                 </div>
+
+                <!-- ↓↓↓ このブロックをコピーして貼り付ける ↓↓↓ -->
+                <div class="settings-item">
+                    <h4>セーフティ設定</h4>
+                    <div class="safety-setting-grid">
+                        <label for="setting-harassment">嫌がらせ:</label>
+                        <select id="setting-harassment" class="safety-setting-select">
+                            <option value="BLOCK_NONE">ブロックしない</option>
+                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
+                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
+                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
+                        </select>
+
+                        <label for="setting-hate-speech">ヘイトスピーチ:</label>
+                        <select id="setting-hate-speech" class="safety-setting-select">
+                            <option value="BLOCK_NONE">ブロックしない</option>
+                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
+                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
+                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
+                        </select>
+
+                        <label for="setting-sexually-explicit">性的表現:</label>
+                        <select id="setting-sexually-explicit" class="safety-setting-select">
+                            <option value="BLOCK_NONE">ブロックしない</option>
+                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
+                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
+                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
+                        </select>
+
+                        <label for="setting-dangerous-content">危険なコンテンツ:</label>
+                        <select id="setting-dangerous-content" class="safety-setting-select">
+                            <option value="BLOCK_NONE">ブロックしない</option>
+                            <option value="BLOCK_ONLY_HIGH">高のみブロック</option>
+                            <option value="BLOCK_MEDIUM_AND_ABOVE" selected>中以上をブロック</option>
+                            <option value="BLOCK_LOW_AND_ABOVE">低以上をブロック</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- ↑↑↑ このブロックまで ↑↑↑ -->
 
                 <div class="settings-group">
                     <h3>パラメータ</h3>
